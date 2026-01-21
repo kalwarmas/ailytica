@@ -1,0 +1,721 @@
+/* Header Styles */
+.topBanner {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    padding: 10px 0;
+    /* Add some padding */
+}
+
+/* Centered Navbar */
+.navbar-collapse {
+    justify-content: center !important;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: var(--black);
+    margin: 0 15px;
+    /* Spacing between links */
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid var(--border);
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-gray);
+    color: var(--primary);
+}
+
+/* Logo Styling */
+.topBanner .navbar-brand img {
+    height: 30px;
+    /* Increased size significantly from 43px */
+    width: auto;
+    filter: none !important;
+    transition: transform 0.3s ease;
+}
+
+.topBanner .navbar-brand img:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    background: #000000;
+    color: white;
+    padding: 80px 0 30px;
+    margin-top: 100px;
+
+}
+
+
+
+.footer-link {
+    color: #dfe6e9;
+    text-decoration: none;
+    transition: 0.3s;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-link:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--accent-color);
+}
+
+:root {
+    --primary: #1e40af;
+    --secondary: #3b82f6;
+    --black: #1a1a1a;
+    --gray: #6b7280;
+    --light-gray: #f9fafb;
+    --border: #f3f4f6;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 160px 0 60px;
+    text-align: center;
+}
+
+.tagline {
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 1.5rem;
+}
+
+.blue-text {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.divider {
+    width: 80px;
+    height: 6px;
+    background: var(--primary);
+    margin: 0 auto 2rem;
+    border-radius: 100px;
+}
+
+.hero-desc {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    color: var(--gray);
+}
+
+/* Services Grid */
+.services-grid {
+    padding: 60px 0 120px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+/* Card Design */
+.service-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+    border-color: rgba(59, 130, 246, 0.2);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.icon-box {
+    width: 54px;
+    height: 54px;
+    background: var(--light-gray);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    transition: background 0.3s ease;
+}
+
+.service-card:hover .icon-box {
+    background: #eff6ff;
+}
+
+.icon-box svg {
+    width: 28px;
+    height: 28px;
+}
+
+.card-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    opacity: 0.1;
+    color: var(--primary);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--black);
+}
+
+.tag {
+    font-size: 0.9375rem;
+    color: var(--gray);
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.view-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.view-btn:hover {
+    color: var(--secondary);
+}
+
+.chevron {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+/* Expandable Content */
+.expand-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+    opacity: 0;
+}
+
+/* Show on Hover or Active Class */
+.service-card:hover .expand-content,
+.service-card.active .expand-content {
+    max-height: 800px;
+    opacity: 1;
+}
+
+.content-inner {
+    padding-top: 24px;
+    margin-top: 24px;
+    border-top: 1px solid var(--border);
+}
+
+.content-inner h4 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--secondary);
+    margin-bottom: 12px;
+}
+
+.content-inner ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.content-inner li {
+    font-size: 0.875rem;
+    color: var(--black);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.content-inner li::before {
+    content: "✓";
+    color: var(--secondary);
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.outcome-box {
+    background: #f0f7ff;
+    padding: 16px;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary);
+}
+
+.outcome-box .label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+
+.outcome-box p {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+/* =========================================
+   Global Premium Utilities
+   ========================================= */
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+    color: var(rgb(255, 255, 255));
+    font-weight: 700;
+}
+
+/* Text Gradient Utility */
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+/* Premium Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border: none;
+    border-radius: 8px;
+    /* Softer corners */
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(30, 64, 175, 0.3);
+    /* Blue glowing shadow */
+}
+
+/* Form Styling (Modern) */
+.form-control {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: var(--light-gray);
+}
+
+.form-control:focus {
+    background-color: var(--white);
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+/* Carousel / Client Logos */
+.customer-logos .slide img {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 120px;
+    /* Constraints */
+    margin: 0 auto;
+}
+
+.customer-logos .slide img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Unified Section Spacing */
+section {
+    position: relative;
+    overflow: hidden;
+    /* Prevent spillover */
+}
+
+/* =========================================
+   End Global Utilities
+   ========================================= */
+
+/* =========================================
+   Case Studies Page Styles
+   ========================================= */
+
+/* Renamed/Generalized to .hero-premium for all inner pages */
+.hero-premium {
+    padding: 0;
+    background: transparent;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.hero-premium h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-premium p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Legacy support or alias */
+.hero-case-studies {
+    padding: 160px 0 100px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    clip-path: ellipse(150% 100% at 50% 0%);
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.hero-case-studies h1 {
+    color: white;
+}
+
+.hero-case-studies p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.case-card {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+}
+
+.case-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(30, 64, 175, 0.1);
+    border-color: var(--secondary);
+}
+
+.case-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: #eff6ff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.case-card:hover .case-icon-wrapper {
+    background: var(--primary);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.case-meta {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.case-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #0f172a;
+    line-height: 1.3;
+}
+
+.case-subtitle {
+    font-weight: 600;
+    color: #1e40af;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.case-text {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.impact-box {
+    margin-top: auto;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 12px;
+    padding: 15px;
+    border-left: 4px solid var(--secondary);
+}
+
+.impact-badge {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* =========================================
+   Unified Legal Pages Styles (Privacy, Terms, Legal)
+   ========================================= */
+
+/* Hero Section for Legal Pages */
+.hero-legal-common {
+    padding: 160px 0 100px;
+    background: var(--white);
+    /* Keep it clean white or light gray if needed */
+    text-align: center;
+    clip-path: ellipse(150% 100% at 50% 0%);
+    /* Consistent heavy curve */
+}
+
+/* Gradient Text using Brand Colors */
+.gradient-text-brand {
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+/* Hero Lead Text */
+.hero-lead-text {
+    font-size: 1.25rem;
+    color: var(--gray);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Legal Content Cards */
+.legal-content-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 32px;
+    /* Consistent padding */
+    margin-bottom: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.legal-content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    /* More subtle premium shadow */
+    border-color: rgba(59, 130, 246, 0.3);
+    /* Brand blue hint */
+}
+
+/* Card Header / Title Row */
+.legal-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    /* implied clickable for accordions */
+}
+
+/* Icons in Cards */
+.legal-icon-box {
+    width: 48px;
+    height: 48px;
+    background: var(--light-gray);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    /* Brand Color */
+    font-size: 1.25rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.legal-content-card:hover .legal-icon-box {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* Card Titles */
+.legal-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--black);
+    flex-grow: 1;
+}
+
+/* Chevron for Accordions */
+.legal-chevron {
+    color: var(--gray);
+    transition: transform 0.3s ease;
+}
+
+.legal-content-card.active .legal-chevron {
+    transform: rotate(180deg);
+    color: var(--primary);
+}
+
+/* Card Body Content */
+.legal-card-body {
+    color: var(--black);
+    /* Better readability than gray */
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    /* For accordion behavior if needed */
+    display: none;
+}
+
+.legal-content-card.static-card .legal-card-body {
+    display: block;
+    /* For non-accordion pages like Terms/Legal static cards */
+    border-top: none;
+    padding-top: 0;
+}
+
+/* Highlights */
+.brand-highlight {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Notice Box (e.g. for SMS) */
+.legal-notice-box {
+    background: #eff6ff;
+    /* light blue tint */
+    border-left: 4px solid var(--primary);
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 20px 0;
+}
+
+/* Section Numbers (Terms page style) */
+.section-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--secondary);
+    /* Lighter blue */
+    opacity: 0.8;
+    margin-right: 12px;
+}
