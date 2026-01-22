@@ -59,14 +59,19 @@
     <main class="mainDiv">
         <div class="container-fluid hero-header-index px-0">
             <div class="hero-bg-wrapper"
-                style="min-height: 85vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Resources/cover.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center;">
-                <div class="container text-center text-white" data-aos="fade-up">
-                    <h1 class="display-2 fw-bold mb-4">Welcome to <span class="text-gradient">Ailytica</span></h1>
-                    <p class="lead fs-3 mb-5 mx-auto" style="max-width: 800px; opacity: 0.95;">We enable enterprises to
-                        reach their goals using technology and our expertise</p>
-                    <div class="hero-btns">
-                        <a href="services.html" class="btn btn-primary btn-lg me-3 px-5">Our Services</a>
-                        <a href="contact.html" class="btn btn-outline-light btn-lg px-5">Contact Us</a>
+                style="min-height: 85vh; background: linear-gradient(135deg, rgba(15, 30, 90, 0.3), rgba(30, 80, 180, 0.2)), url('Resources/home_1.jpg') center/cover no-repeat; background-attachment: fixed; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('Resources/cover.png') center/cover no-repeat; filter: blur(1px); z-index: 0; background-attachment: fixed;"></div>
+                <!-- Vision 2030 Background Pattern - Hidden on Mobile -->
+                <div style="position: absolute; top: 0; right: 0; width: 400px; height: 400px; background: rgba(255,255,255,0.03); border-radius: 50%; transform: translate(50px, -50px); display: none; z-index: 1;"></div>
+                <div style="position: absolute; bottom: 0; left: 0; width: 300px; height: 300px; background: rgba(255,255,255,0.03); border-radius: 50%; transform: translate(-50px, 50px); display: none; z-index: 1;"></div>
+                <div style="position: absolute; top: 50%; left: 50%; width: 800px; height: 800px; border: 1px solid rgba(255,255,255,0.03); border-radius: 50%; transform: translate(-50%, -50%); display: none; z-index: 1;"></div>
+                
+                <div class="container text-center text-white" data-aos="fade-up" style="position: relative; z-index: 2; padding: 40px 20px;">
+                    <h1 class="fw-bold mb-3" style="font-size: clamp(2rem, 8vw, 3.5rem); line-height: 1.2;">Welcome to <span style="color: #ffffff; font-weight: 900;">Ailytica</span></h1>
+                    <p class="mb-4 mx-auto" style="font-size: clamp(1rem, 3.5vw, 1.25rem); max-width: 700px; opacity: 0.95; line-height: 1.6;">Empowering enterprises to achieve Vision 2030 through strategic digital transformation and AI innovation</p>
+                    <div class="hero-btns d-flex flex-column flex-sm-row gap-3 justify-content-center" style="flex-wrap: wrap;">
+                        <a href="services.html" class="btn btn-light fw-bold text-primary" style="padding: 12px 35px; font-size: clamp(0.95rem, 2.5vw, 1rem); min-width: 160px;">Our Services</a>
+                        <a href="contact.html" class="btn btn-outline-light fw-bold" style="padding: 12px 35px; font-size: clamp(0.95rem, 2.5vw, 1rem); min-width: 160px;">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -292,6 +297,98 @@
                 </div>
             </div>
         </section>
+
+        <!-- How We Work Section -->
+        <section class="how-we-work-section py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <p class="tagline">Our Methodology</p>
+                    <h2 class="section-heading fw-bold mb-4">How We <span class="text-gradient">Work</span></h2>
+                    <div class="divider"></div>
+                    <p class="lead text-muted mx-auto" style="max-width: 900px;">
+                        At Ailytica, we don't start with software, dashboards, or AI promises. We start with business reality. Our approach is designed for organizations operating in complex, fast-moving environments where poor implementation costs more than no implementation at all.
+                    </p>
+                </div>
+
+                <div class="row g-4 mt-5">
+                    <!-- Step 1 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="service-card h-100" style="padding: 40px; border-left: 5px solid #1e40af;">
+                            <div class="d-flex align-items-flex-start gap-3 mb-3" style="flex-wrap: wrap;">
+                                <div class="step-number" style="width: 50px; height: 50px; min-width: 50px; background: linear-gradient(135deg, #1e40af, #3b82f6); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 24px;">1</div>
+                                <h3 class="mb-0" style="flex: 1; min-width: 200px;">Understand the Business Before the Technology</h3>
+                            </div>
+                            <p class="text-muted">Before recommending any ERP, AI model, or analytics platform, we invest time in understanding how decisions are made, where data breaks down, and what leadership actually needs to see.</p>
+                            <div class="outcome-box mt-3" style="background: #e0e7ff; padding: 15px; border-radius: 8px;">
+                                <span class="label fw-bold text-primary">Outcome:</span>
+                                <p class="mb-0 text-dark">Clear problem definition and alignment with business priorities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="service-card h-100" style="padding: 40px; border-left: 5px solid #1e40af;">
+                            <div class="d-flex align-items-flex-start gap-3 mb-3" style="flex-wrap: wrap;">
+                                <div class="step-number" style="width: 50px; height: 50px; min-width: 50px; background: linear-gradient(135deg, #1e40af, #3b82f6); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 24px;">2</div>
+                                <h3 class="mb-0" style="flex: 1; min-width: 200px;">Define a Strategy That Avoids Complexity Traps</h3>
+                            </div>
+                            <p class="text-muted">We design practical ERP and data roadmaps with minimal customization. Every initiative is evaluated against one question: Will this improve decision-making, control, or efficiency within months—not years?</p>
+                            <div class="outcome-box mt-3" style="background: #e0e7ff; padding: 15px; border-radius: 8px;">
+                                <span class="label fw-bold text-primary">Outcome:</span>
+                                <p class="mb-0 text-dark">A roadmap that is executable, measurable, and sustainable.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="service-card h-100" style="padding: 40px; border-left: 5px solid #1e40af;">
+                            <div class="d-flex align-items-flex-start gap-3 mb-3" style="flex-wrap: wrap;">
+                                <div class="step-number" style="width: 50px; height: 50px; min-width: 50px; background: linear-gradient(135deg, #1e40af, #3b82f6); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 24px;">3</div>
+                                <h3 class="mb-0" style="flex: 1; min-width: 200px;">Build a Strong Data & ERP Foundation</h3>
+                            </div>
+                            <p class="text-muted">AI is only as effective as the systems and data beneath it. We focus on stabilizing ERP processes, standardizing workflows, cleaning data, and establishing governance.</p>
+                            <div class="outcome-box mt-3" style="background: #e0e7ff; padding: 15px; border-radius: 8px;">
+                                <span class="label fw-bold text-primary">Outcome:</span>
+                                <p class="mb-0 text-dark">Reliable, trusted operational data across the organization.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="service-card h-100" style="padding: 40px; border-left: 5px solid #1e40af;">
+                            <div class="d-flex align-items-flex-start gap-3 mb-3" style="flex-wrap: wrap;">
+                                <div class="step-number" style="width: 50px; height: 50px; min-width: 50px; background: linear-gradient(135deg, #1e40af, #3b82f6); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 24px;">4</div>
+                                <h3 class="mb-0" style="flex: 1; min-width: 200px;">Apply AI Where It Adds Real Value</h3>
+                            </div>
+                            <p class="text-muted">We don't push AI everywhere. We introduce AI selectively where it reduces manual effort, improves forecasting, flags risks early, and supports human decision-making.</p>
+                            <div class="outcome-box mt-3" style="background: #e0e7ff; padding: 15px; border-radius: 8px;">
+                                <span class="label fw-bold text-primary">Outcome:</span>
+                                <p class="mb-0 text-dark">AI becomes a decision-support layer, not an experiment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="col-lg-12 mb-4">
+                        <div class="service-card h-100" style="padding: 40px; border-left: 5px solid #1e40af;">
+                            <div class="d-flex align-items-flex-start gap-3 mb-3" style="flex-wrap: wrap;">
+                                <div class="step-number" style="width: 50px; height: 50px; min-width: 50px; background: linear-gradient(135deg, #1e40af, #3b82f6); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 24px;">5</div>
+                                <h3 class="mb-0" style="flex: 1; min-width: 200px;">Enable Adoption, Not Just Delivery</h3>
+                            </div>
+                            <p class="text-muted">Technology fails when people don't trust or use it. We support change management, simplify workflows, provide clear documentation, and enable continuous optimization post-go-live.</p>
+                            <div class="outcome-box mt-3" style="background: #e0e7ff; padding: 15px; border-radius: 8px;">
+                                <span class="label fw-bold text-primary">Outcome:</span>
+                                <p class="mb-0 text-dark">Systems are adopted, used, and relied upon—daily.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="py-5 bg-light">
             <div class="container" data-aos="fade-up">
                 <div class="text-center mb-5">
@@ -329,6 +426,36 @@
                                 <h5 class="fw-bold mb-3">Real Estate Management</h5>
                                 <p class="text-muted small mb-4">30% improvement in lead-to-deal conversion with unified
                                     CRM and tenant workflows.</p>
+                                <a href="case-studies.html" class="text-gradient fw-bold text-decoration-none">Read
+                                    Study <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm" style="border-radius: 20px;">
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-3">Construction & Infrastructure</h5>
+                                <p class="text-muted small mb-4">ERP stabilization, AI-based cost and schedule forecasting for project control and visibility.</p>
+                                <a href="case-studies.html" class="text-gradient fw-bold text-decoration-none">Read
+                                    Study <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm" style="border-radius: 20px;">
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-3">Hospitality & Customer-Centric Businesses</h5>
+                                <p class="text-muted small mb-4">Demand forecasting, occupancy optimization, and unified operational dashboards for guest engagement.</p>
+                                <a href="case-studies.html" class="text-gradient fw-bold text-decoration-none">Read
+                                    Study <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm" style="border-radius: 20px;">
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-3">Professional Services & Enterprise Operations</h5>
+                                <p class="text-muted small mb-4">ERP optimization, governance, and decision-support dashboards for service-oriented organizations.</p>
                                 <a href="case-studies.html" class="text-gradient fw-bold text-decoration-none">Read
                                     Study <i class="fa-solid fa-arrow-right ms-1"></i></a>
                             </div>
@@ -464,6 +591,110 @@
 
             </div>
         </section> -->
+
+        <!-- Industries We Serve Section -->
+        <section class="industries-section py-5">
+            <div class="container" data-aos="fade-up">
+                <div class="text-center mb-5">
+                    <p class="tagline">Industries We Serve</p>
+                    <h2 class="section-heading fw-bold">Specialized Solutions for <span class="text-gradient">Complex Environments</span></h2>
+                    <div class="divider"></div>
+                    <p class="lead text-muted mx-auto" style="max-width: 900px;">
+                        Ailytica partners with organizations operating in complex, data-intensive environments where execution, visibility, and decision quality directly impact growth and margins.
+                    </p>
+                </div>
+
+                <div class="row g-4 mt-5">
+                    <!-- Construction & Infrastructure -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="industry-card" style="padding: 40px; border: 2px solid #e5e7eb; border-radius: 15px; transition: all 0.3s ease;">
+                            <div class="mb-4">
+                                <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px;">
+                                    <i class="fas fa-building-columns"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold mb-3">Construction & Infrastructure</h4>
+                            <p class="text-muted mb-3">Construction and infrastructure organizations face constant pressure from cost volatility, project delays, fragmented systems, and tight margins.</p>
+                            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                                <h6 class="fw-bold mb-3">How we help:</h6>
+                                <ul class="list-unstyled" style="color: #666;">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>ERP stabilization and process standardization</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>AI-based cost and schedule forecasting</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Procurement and inventory visibility</li>
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i>Executive dashboards for project health and risk</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hospitality & Customer-Centric -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="industry-card" style="padding: 40px; border: 2px solid #e5e7eb; border-radius: 15px; transition: all 0.3s ease;">
+                            <div class="mb-4">
+                                <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px;">
+                                    <i class="fas fa-hotel"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold mb-3">Hospitality & Customer-Centric Businesses</h4>
+                            <p class="text-muted mb-3">Hospitality and service-driven organizations must balance operational efficiency with exceptional customer experience.</p>
+                            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                                <h6 class="fw-bold mb-3">How we help:</h6>
+                                <ul class="list-unstyled" style="color: #666;">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Demand and occupancy forecasting using AI</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Staffing and resource optimization</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Guest behavior and engagement analytics</li>
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i>Unified operational dashboards</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Services -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="industry-card" style="padding: 40px; border: 2px solid #e5e7eb; border-radius: 15px; transition: all 0.3s ease;">
+                            <div class="mb-4">
+                                <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px;">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold mb-3">Professional Services & Enterprise Operations</h4>
+                            <p class="text-muted mb-3">Service-oriented and enterprise organizations often struggle with ERP complexity, manual reporting, and low trust in system data.</p>
+                            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                                <h6 class="fw-bold mb-3">How we help:</h6>
+                                <ul class="list-unstyled" style="color: #666;">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>ERP optimization and governance</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Data consolidation and analytics</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>AI-enabled forecasting and anomaly detection</li>
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i>Decision-support dashboards for executives</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Real Estate & Property Development -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="industry-card" style="padding: 40px; border: 2px solid #e5e7eb; border-radius: 15px; transition: all 0.3s ease;">
+                            <div class="mb-4">
+                                <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px;">
+                                    <i class="fas fa-city"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold mb-3">Real Estate & Property Development</h4>
+                            <p class="text-muted mb-3">Real estate businesses generate large volumes of data across sales, marketing, finance, and operations.</p>
+                            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                                <h6 class="fw-bold mb-3">How we help:</h6>
+                                <ul class="list-unstyled" style="color: #666;">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>CRM strategy and workflow optimization</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>AI-driven lead scoring and conversion analytics</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Marketing ROI and pipeline visibility</li>
+                                    <li><i class="fas fa-check-circle text-primary me-2"></i>Centralized reporting for leadership teams</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <br />
         <br />
