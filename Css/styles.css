@@ -467,6 +467,97 @@ section {
 }
 
 /* =========================================
+   Visual Content Layout Helpers
+   ========================================= */
+
+.content-with-image {
+    padding: 60px 0;
+}
+
+.content-with-image-inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.content-with-image .content-text {
+    flex: 1 1 320px;
+}
+
+.content-with-image .content-media {
+    flex: 1 1 320px;
+}
+
+.content-image-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at top left, rgba(59, 130, 246, 0.25), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.8), #020617);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e5e7eb;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-image-placeholder span {
+    position: relative;
+    z-index: 1;
+}
+
+.content-with-image.reverse .content-text {
+    order: 2;
+}
+
+.content-with-image.reverse .content-media {
+    order: 1;
+}
+
+.card-image-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #e5e7eb 0%, #f3f4f6 45%, #dbeafe 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 0 0, rgba(59, 130, 246, 0.25), transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(30, 64, 175, 0.25), transparent 55%);
+    mix-blend-mode: multiply;
+}
+
+@media (max-width: 767.98px) {
+    .content-with-image {
+        padding: 40px 0;
+    }
+
+    .content-with-image-inner {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+/* =========================================
    End Global Utilities
    ========================================= */
 
